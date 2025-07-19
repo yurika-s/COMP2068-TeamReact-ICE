@@ -24,17 +24,15 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
+    <div className='container'>
       <h1>
         <img
-          src='/Harry-Potter-Logo-2001.jpg'
+          src='/harry-potter-logo.png'
           className='App-logo'
           alt='logo'
         />
       </h1>
-      <div class='container'>
-        <TitlebarImageList itemData={characters} />
-      </div>
+      <TitlebarImageList itemData={characters} />
     </div>
   );
 }
