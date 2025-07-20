@@ -1,11 +1,14 @@
-import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
-const TitlebarImageList = ({ itemData }) => {
+const TitlebarImageList = ({ itemData, handleClickDetail }) => {
+  const handleIconClick = (event) => {
+    const id = event.currentTarget.getAttribute('data-id');
+    handleClickDetail(id);
+  };
   return (
     <ImageList sx={{ width: 900 }}>
       <ImageListItem key='Subheader' cols={3} />
@@ -22,8 +25,8 @@ const TitlebarImageList = ({ itemData }) => {
           ) : (
             <img
               src='https://dummyimage.com/400x600/ddd/fff.png&text=No+Image'
-              alt=''
-            ></img>
+              alt='None'
+            />
           )}
           <ImageListItemBar
             title={item.name}
@@ -32,6 +35,8 @@ const TitlebarImageList = ({ itemData }) => {
               <IconButton
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.name}`}
+                data-id={item.id}
+                onClick={handleIconClick}
               >
                 <ReadMoreIcon />
               </IconButton>

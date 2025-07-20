@@ -1,11 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 import './App.css';
 import TitlebarImageList from './components/TitlebarImageList.js';
+import DetailDialog from './components/DetailDialog.js';
+
+const charactersListUrl = 'https://hp-api.onrender.com/api/characters';
+const initialDetailInfo = {
+  name: '',
+  dateOfBirth: '',
+  gender: '',
+  house: '',
+  actor: '',
+};
 
 function App() {
   const [characters, setCharacters] = useState([]);
-
-  const charactersListUrl = 'https://hp-api.onrender.com/api/characters';
+  // const [selectedId, setSelectedId] = useState('');
+  const [open, setOpen] = useState(false);
+  const [detailedInfo, setDetailedInfo] = useState(initialDetailInfo);
 
   // functions for when the page loaded
   useEffect(() => {
@@ -23,17 +34,31 @@ function App() {
       });
   }, []);
 
+  const handleClickDetail = (id) => {
+    // search the character by id
+    const characterInfo = characters.find((character) => character.id === id);
+    // set character details and show the dialog
+    setDetailedInfo(characterInfo);
+    setOpen(true);
+  };
+  // close dialog
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <div className='container'>
-      <h1>
-        <img
-          src='/harry-potter-logo.png'
-          className='App-logo'
-          alt='logo'
+    <Fragment>
+      <div className='container'>
+        <h1>
+          <img src='/harry-potter-logo.png' className='App-logo' alt='logo' />
+        </h1>
+        <TitlebarImageList
+          itemData={characters}
+          handleClickDetail={handleClickDetail}
         />
-      </h1>
-      <TitlebarImageList itemData={characters} />
-    </div>
+      </div>
+      {open && <DetailDialog info={detailedInfo} handleClose={handleClose} />}
+    </Fragment>
   );
 }
 
