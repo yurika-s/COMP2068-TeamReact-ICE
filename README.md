@@ -32,6 +32,10 @@ npm start
 ```
 
 ## References
-
-- https://create-react-app.dev/docs/getting-started/
-- https://mui.com/material-ui/getting-started/installation/
+- Official React Documentation​ | https://react.dev​
+- React – Hooks Documentation​ | https://react.dev/learn/hooks​
+- ReactJS Virtual DOM​ | https://www.geeksforgeeks.org/reactjs/reactjs-virtual-dom/​
+- React Tutorial – W3Schools​ | https://www.w3schools.com/react
+- Create React App | https://create-react-app.dev/docs/getting-started/
+- Material UI | https://mui.com/material-ui/getting-started/installation/
+- Harry Potter API | https://hp-api.onrender.com/
