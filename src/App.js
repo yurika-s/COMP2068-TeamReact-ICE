@@ -14,7 +14,6 @@ const initialDetailInfo = {
 
 function App() {
   const [characters, setCharacters] = useState([]);
-  // const [selectedId, setSelectedId] = useState('');
   const [open, setOpen] = useState(false);
   const [detailedInfo, setDetailedInfo] = useState(initialDetailInfo);
 
