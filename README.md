@@ -4,7 +4,7 @@ This repo is for the In-class exercise project with [Create React App](https://g
 
 ## What we create
 
-https://github.com/user-attachments/assets/70fb5ec3-8b88-4502-90c9-09487b1b49d
+![In-Class-Exercise Video](https://github.com/user-attachments/assets/70fb5ec3-8b88-4502-90c9-09487b1b49d.gif)
 
 
 ## Branch
