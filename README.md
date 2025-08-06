@@ -23,7 +23,7 @@ Node 14 or higher version on your local machine
 ## Extensions
 
 **ES7 React/Redux/GraphQL/React-Native snippets:**  
-http://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+[http://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets](https://marketplace.visualstudio.com/items?itemName=rodrigovallades.es7-react-js-snippets)
 
 ## Create React App
 
