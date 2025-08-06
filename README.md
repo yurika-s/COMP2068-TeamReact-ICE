@@ -2,10 +2,10 @@
 
 This repo is for the In-class exercise project with [Create React App](https://github.com/facebook/create-react-app) in team react in COMP 2068 JS Frameworks.
 
-## What we create
-
-![In-Class-Exercise Video](https://github.com/user-attachments/assets/70fb5ec3-8b88-4502-90c9-09487b1b49d.gif)
-
+## The Goal 
+Our goal in this exercise is to understand two key concepts:
+1.	How to create and use components, and
+2.	How to pass data from a parent component to a child component.
 
 ## Branch
 - main: starter code for the exercise
