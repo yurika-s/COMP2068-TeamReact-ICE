@@ -4,7 +4,7 @@ This repo is for the In-class exercise project with [Create React App](https://g
 
 ## The Goal 
 Our goal in this exercise is to understand two key concepts:
-1.	How to create and use components, and
+1.	How to create and use components
 2.	How to pass data from a parent component to a child component.
 
 ## Branch
